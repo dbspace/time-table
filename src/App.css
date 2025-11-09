@@ -1,0 +1,84 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9333ea 0%, #dc2626 50%, #ea580c 100%);
+}
+
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: transparent;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.app-header p {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.app-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 2rem 2rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.calendar-section,
+.events-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-section {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.events-section {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  padding: 0;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .app-main {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 1.5rem 1rem;
+  }
+  
+  .app-header h1 {
+    font-size: 2rem;
+  }
+  
+  .app-header p {
+    font-size: 1rem;
+  }
+  
+  .app-main {
+    padding: 0 0.5rem 1rem 0.5rem;
+    gap: 1rem;
+  }
+}
