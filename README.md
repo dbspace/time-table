@@ -100,3 +100,5 @@ The built files will be in the `dist` directory, ready to be deployed to any sta
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+ 
+> Note: This line was added on branch `new_feature` as a small test change.
